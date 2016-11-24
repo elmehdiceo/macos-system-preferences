@@ -38,10 +38,10 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Show icons for hard drives, servers, and removable media on the desktop
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true 
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true 
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool true 
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+- defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true 
+- defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true 
+- defaults write com.apple.finder ShowMountedServersOnDesktop -bool true 
+- defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Enable quit finder menu item.
 defaults write com.apple.finder QuitMenuItem -int 1
@@ -52,9 +52,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Search the current folder by default.
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-# ==============================================
-# Security
-# ==============================================
+## Security
+
 
 # Enable Firewall (specific services, stealth mode, logging).
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
