@@ -1,11 +1,10 @@
 
-## System defualts
 
-# Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "MathBook Pro"
-sudo scutil --set HostName "MathBook Pro"
-sudo scutil --set LocalHostName "MathBook-Pro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
+#### Set computer name (as done via System Preferences → Sharing)
+* sudo scutil --set ComputerName "MathBook Pro"
+* sudo scutil --set HostName "MathBook Pro"
+* sudo scutil --set LocalHostName "MathBook-Pro"
+* sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
 
 Avoid creating .DS_Store files on network volumes
 * defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
