@@ -1,21 +1,20 @@
-# ==============================================
-# System defualts
-# ==============================================
+
+## System defualts
 
 # Avoid creating .DS_Store files on network volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+- defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Disable the 'Are you sure you want to open this application? 
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+- defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Save JPEG for screenshots instead of PNG for small footprint\n"
-defaults write com.apple.screencapture type jpg
+- defaults write com.apple.screencapture type jpg
 
 # Show battery level percentage.
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+- defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Minimize windows into application icon.
-defaults write com.apple.dock minimize-to-application -int 1
+- defaults write com.apple.dock minimize-to-application -int 1
 
 
 # ==============================================
